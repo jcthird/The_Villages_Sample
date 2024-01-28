@@ -545,3 +545,53 @@ footer css
     margin-top: 1rem;
   }
 }
+
+/* CSS for larger screens (e.g., Desktops) remains unchanged */
+
+/* Media Queries for smaller screens (e.g., MacBook) */
+@media screen and (max-width: 1200px) {
+  /* Navbar adjustments */
+  .nav ul li a {
+    font-size: 0.95em; /* Reduce font size */
+    margin: 10px 1rem; /* Reduce margin */
+  }
+
+  .nav ul li.logo a {
+    margin: 0 2rem; /* Adjust logo margin */
+  }
+
+  /* Center content adjustments */
+  .vidContent h1 {
+    font-size: 4.5em; /* Smaller heading for better fit */
+  }
+
+  .vidContent {
+    top: 250px; /* Adjust vertical position */
+  }
+}
+
+/* Media Queries for even smaller screens (e.g., Tablets, Mobile Phones) */
+@media screen and (max-width: 768px) {
+  /* Navbar adjustments for mobile */
+  .nav ul {
+    flex-direction: column; /* Stack the nav items vertically */
+  }
+
+  .nav ul li {
+    margin: 5px 0; /* Adjust margin */
+  }
+
+  .nav ul li a {
+    font-size: 0.85em; /* Further reduce font size */
+  }
+
+  /* Center content adjustments for mobile */
+  .vidContent h1 {
+    font-size: 3em; /* Smaller heading for mobile screens */
+  }
+
+  .vidContent {
+    top: 200px; /* Adjust vertical position for mobile */
+    padding: 0 10px; /* Add some padding */
+  }
+}
