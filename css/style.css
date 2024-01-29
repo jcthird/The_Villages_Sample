@@ -554,7 +554,16 @@ footer css
   .nav ul li a {
     font-size: 0.95em; /* Reduce font size */
     margin: 10px 1rem; /* Reduce margin */
+     flex-direction: column; /* Stack the nav items vertically */
+    align-items: flex-start; /* Align items to the start (left side) */
   }
+
+  .social-icons {
+    right: 50px; /* Decrease this value to move the icons to the left */
+    position: absolute; /* or position: fixed; based on your layout */
+    /* Other properties like top or bottom might be necessary depending on your layout */
+  }
+}
 
   .nav ul li.logo a {
     margin: 0 2rem; /* Adjust logo margin */
@@ -594,4 +603,15 @@ footer css
     top: 200px; /* Adjust vertical position for mobile */
     padding: 0 10px; /* Add some padding */
   }
+}
+
+/* To move the entire list of social icons to the left */
+ul.social-icons.list-inline {
+  margin-left: 0; /* Adjust this value to move the icons to the left */
+  padding-left: 0; /* You may also need to adjust this value */
+}
+
+/* If you want to adjust the spacing between individual icons, you can target the li */
+ul.social-icons.list-inline > li {
+  margin-right: 10px; /* Decrease the right margin value to move icons closer */
 }
