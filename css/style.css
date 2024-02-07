@@ -1034,7 +1034,7 @@ ul.social-icons.list-inline li a {
 .unique-heading {
   display: inline-block; /* Needed to contain the width to the content */
   position: relative; /* Needed for absolute positioning of the pseudo-element */
-  font-size: 4rem; /* Example font-size */
+  font-size: 5rem; /* Example font-size */
 }
 
 
@@ -1045,7 +1045,7 @@ ul.social-icons.list-inline li a {
   position: absolute; /* Absolute positioning relative to the heading */
   bottom: -10px; /* Position it under the heading */
   left: 0; /* Align it with the left of the heading */
-  width: 62px; /* Width of the dash */
+  width: 77px; /* Width of the dash */
   height: 4px; /* Height of the dash */
   background-color: #996309; /* Color of the dash */
   /* Align with the first letter */
