@@ -58,8 +58,8 @@ html {
 
 .nav-icon {
   position: absolute;
-  top: 27px;
-  right: 30px;
+  top: 20007px;
+  right: 500px;
   padding: 5px;
   width: 40px;
   z-index: 1;
@@ -715,7 +715,7 @@ ul.social-icons.list-inline li a {
 .nav-icon {
   position: absolute;
   top: -5px; /* Adjust as necessary */
-  right: -50px; /* Adjust as necessary, increase if the icon is too close to the link */
+  right: 0px; /* Adjust as necessary, increase if the icon is too close to the link */
   transform: translateY(30%); /* Center vertically */
   /* ... other styles ... */
 }
