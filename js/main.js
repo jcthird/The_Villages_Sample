@@ -1,13 +1,13 @@
-$(document).ready(function() {
-  $(".nav-icon").click(function() {
+$(document).ready(function () {
+  $(".nav-icon").click(function () {
     $(".full-nav").addClass("open");
   });
 
-  $(".nav-close").click(function() {
+  $(".nav-close").click(function () {
     $(".full-nav").removeClass("open");
   });
 
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     var sc = $(window).scrollTop();
     if (sc > 100) {
       $(".nav").addClass("sticky");
@@ -23,14 +23,17 @@ $(document).ready(function() {
     infiniteLoop: true,
     minSlides: 1,
     maxSlides: 1,
-    speed: 1200
+    speed: 1200,
+    auto: true,
+    pause: 5000,
+    autoHover: true,
   });
 
   $("#work").magnificPopup({
     delegate: "a",
     type: "image",
     gallery: {
-      enabled: true
-    }
+      enabled: true,
+    },
   });
 });

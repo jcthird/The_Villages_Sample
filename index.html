@@ -31,11 +31,13 @@
     window.scrollTo(0, 0);
   }
 </script>
+
   <body>
     <header class="header">
       <ul class="bxslider">
         <li>
           <div class="bg-video">
+            <div class="video-overlay"></div> <!-- Overlay goes here -->
             <video
               playsinline="playsinline"
               autoplay="autoplay"
@@ -61,11 +63,11 @@
               <li>
                 <a href=""><i class="fab fa-twitter"></i></a>
               </li>
-              <li>
+              <!-- <li>
                 <a href=""><i class="fab fa-linkedin"></i></a>
-              </li>
+              </li> -->
               <li>
-                <a href=""><i class="fab fa-google-plus"></i></a>
+                <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
               </li>
               <li>
                 <a href=""><i class="fab fa-instagram"></i></a>
@@ -74,6 +76,7 @@
           </div>
         </li>
          <div class="bg-video">
+          <div class="video-overlay"></div> <!-- Overlay goes here -->
           <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" id="herovideo">
             <source src="/img/video (2160p) (1).mp4" type="video/mp4" />
           </video>
@@ -98,11 +101,11 @@
             <li>
               <a href=""><i class="fab fa-twitter"></i></a>
             </li>
-            <li>
+            <!-- <li>
               <a href=""><i class="fab fa-linkedin"></i></a>
-            </li>
+            </li> -->
             <li>
-              <a href=""><i class="fab fa-google-plus"></i></a>
+              <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
             </li>
             <li>
               <a href=""><i class="fab fa-instagram"></i></a>
@@ -111,6 +114,7 @@
         </div>
         </li>
         <div class="bg-video">
+          <div class="video-overlay"></div> <!-- Overlay goes here -->
           <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" id="herovideo">
             <source src="img/the_villages_golf_video.mp4" type="video/mp4" />
           </video>
@@ -135,11 +139,11 @@
             <li>
               <a href=""><i class="fab fa-twitter"></i></a>
             </li>
-            <li>
+            <!-- <li>
               <a href=""><i class="fab fa-linkedin"></i></a>
-            </li>
+            </li> -->
             <li>
-              <a href=""><i class="fab fa-google-plus"></i></a>
+              <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
             </li>
             <li>
               <a href=""><i class="fab fa-instagram"></i></a>
@@ -148,13 +152,39 @@
         </div>
         </li>
       </ul>
-        
       <nav class="nav">
         <ul>
           <li><a href="">Home</a></li>
-          <li><a href="">Residency</a></li>
-          <li><a href="">Events & Weddings</a></li>
-          <li><a href="">Clubhouse & dining</a></li>
+          <li class="nav-item dropdown">
+  <a class="nav-link drop-btn" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Residency <i class="fas fa-chevron-down"></i>
+  </a>
+  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+    <a class="dropdown-item" href="#">Home Styles</a>
+    <a class="dropdown-item" href="#">Assessments</a>
+    <a class="dropdown-item" href="#">Realtors</a>
+    <a class="dropdown-item" href="#">Resource Guide</a>
+    <a class="dropdown-item" href="#">HOA Resale Documents</a>
+  </div>
+</li>
+          <li class="nav-item dropdown">
+  <a class="nav-link drop-btn" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Events & Weddings <i class="fas fa-chevron-down"></i>
+  </a>
+  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+    <a class="dropdown-item" href="#">Weddings</a>
+    <a class="dropdown-item" href="#">Corporate Events</a>
+    <a class="dropdown-item" href="#">Special Events</a>
+  </div>
+</li>
+          <li class="nav-item dropdown">
+  <a class="nav-link drop-btn" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Clubhouse & dining <i class="fas fa-chevron-down"></i>
+  </a>
+  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+    <a class="dropdown-item" href="#">Clubhouse & Bistro Menus</a>
+  </div>
+</li>
           <li class="logo"> 
              <a href=""
               ><img class="logo-img" src="img/tvgcc-logo.png" alt="" class="white"/><img
@@ -163,10 +193,29 @@
                 alt=""
             /></a>
            </li>
-          <li><a href="">golf</a></li>
-          <li><a href="">advertising</a></li>
-          <li><a href="">resident portal</a></li>
-          <li><a href="">About us</a></li>
+          <li class="nav-item dropdown">
+  <a class="nav-link drop-btn" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Golf <i class="fas fa-chevron-down"></i>
+  </a>
+  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+    <a class="dropdown-item" href="#">Green Fees</a>
+    <a class="dropdown-item" href="#">Pro Shop</a>
+    <a class="dropdown-item" href="#">Lessons</a>
+  </div>
+</li>
+          <li class="nav-item dropdown">
+  <a class="nav-link drop-btn" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    About Us <i class="fas fa-chevron-down"></i>
+  </a>
+  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+    <a class="dropdown-item" href="#">Facilities & Amenities</a>
+    <a class="dropdown-item" href="#">Sports & Activities</a>
+    <a class="dropdown-item" href="#">Public Safety</a>
+    <a class="dropdown-item" href="#">Contact us</a>
+  </div>
+</li>
+          <li><a href="">Advertising</a></li>
+          <li><a href="">Resident Portal</a></li>
         </ul>
         <a class="nav-icon" href="javascript:void(0);"
           ><span></span><span></span><span></span
@@ -207,6 +256,13 @@
         </ul>
       </nav>
       <ul class="social-icons list-inline">
+  <li><a href=""><i class="fab fa-facebook"></i></a></li>
+  <li><a href=""><i class="fab fa-twitter"></i></a></li>
+  <!-- <li><a href=""><i class="fab fa-linkedin"></i></a></li> -->
+  <li><a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></li>
+  <li><a href=""><i class="fab fa-instagram"></i></a></li>
+</ul>
+      <!-- <ul class="social-icons list-inline">
         <li>
           <a href=""><i class="fab fa-facebook"></i></a>
           <a href=""><i class="fab fa-twitter"></i></a>
@@ -214,7 +270,7 @@
           <a href=""><i class="fab fa-google-plus"></i></a>
           <a href=""><i class="fab fa-instagram"></i></a>
         </li>
-      </ul>
+      </ul> -->
       <div class="corner-circle">
         <a href="javascript:void(0);" class="nav-close"
           ><span></span><span></span
@@ -399,6 +455,18 @@
 
     <br><br><br>
 
+   <div class="section-with-background">
+  <div class="content">
+   <h2 class="unique-heading">A Unique Way of Life</h2>
+   <br><br>
+    <p>The Villages Golf and Country Club is the Premiere destination in Silicon Valley for a Corporate Golf Tournament. With our amenities, business facilities and catering options, there is nothing we can’t handle. Contact our Business Office for details at (408) 223-4643</p>
+  </div>
+</div>
+
+
+
+<br><br><br>
+
     <section id="work">
       <div class="content-box">
         <div class="content-title">
@@ -410,8 +478,8 @@
           <div class="row no-gutters">
             <div class="col-md-3 col-sm-4">
               <div class="img-wrapper">
-                <a href="img/pexels-binyamin-mellish-186077.jpg">
-                <img src="img/pexels-binyamin-mellish-186077.jpg" class="img-responsive" alt="" height="600px" width="600px">
+                <a href="img/resized_pexels-alex-staudinger-1732414.jpg">
+                <img src="img/resized_pexels-alex-staudinger-1732414.jpg" class="img-responsive" alt="" height="600px" width="600px">
               </a>
               </div>
             
@@ -419,8 +487,8 @@
             </div>
             <div class="col-md-3 col-sm-4">
               <div class="img-wrapper">
-                <a href="img/pexels-binyamin-mellish-186077.jpg">
-                <img src="img/pexels-binyamin-mellish-186077.jpg" class="img-responsive" alt="" height="600px" width="600px">
+                <a href="img/resized_pexels-binyamin-mellish-1396122.jpg">
+                <img src="img/resized_pexels-binyamin-mellish-1396122.jpg" class="img-responsive" alt="" height="600px" width="600px">
               </a>
               </div>
             
@@ -428,8 +496,8 @@
             </div>
             <div class="col-md-3 col-sm-4">
               <div class="img-wrapper">
-                <a href="img/pexels-binyamin-mellish-186077.jpg">
-                <img src="img/pexels-binyamin-mellish-186077.jpg" class="img-responsive" alt="" height="600px" width="600px">
+                <a href="img/resized_pexels-expect-best-323780.jpg">
+                <img src="img/resized_pexels-expect-best-323780.jpg" class="img-responsive" alt="" height="600px" width="600px">
               </a>
               </div>
             
@@ -437,8 +505,8 @@
             </div>
             <div class="col-md-3 col-sm-4">
               <div class="img-wrapper">
-                <a href="img/pexels-binyamin-mellish-186077.jpg">
-                <img src="img/pexels-binyamin-mellish-186077.jpg" class="img-responsive" alt="" height="600px" width="600px">
+                <a href="img/resized_pexels-frans-van-heerden-1438832.jpg">
+                <img src="img/resized_pexels-frans-van-heerden-1438832.jpg" class="img-responsive" alt="" height="600px" width="600px">
               </a>
               </div>
             
@@ -446,8 +514,8 @@
             </div>
             <div class="col-md-3 col-sm-4">
               <div class="img-wrapper">
-                <a href="img/pexels-binyamin-mellish-186077.jpg">
-                <img src="img/pexels-binyamin-mellish-186077.jpg" class="img-responsive" alt="" height="600px" width="600px">
+                <a href="img/resized_pexels-luis-yanez-206172.jpg">
+                <img src="img/resized_pexels-luis-yanez-206172.jpg" class="img-responsive" alt="" height="600px" width="600px">
               </a>
               </div>
             
@@ -455,8 +523,8 @@
             </div>
             <div class="col-md-3 col-sm-4">
               <div class="img-wrapper">
-                <a href="img/pexels-binyamin-mellish-186077.jpg">
-                <img src="img/pexels-binyamin-mellish-186077.jpg" class="img-responsive" alt="" height="600px" width="600px">
+                <a href="img/resized_pexels-pixabay-164558.jpg">
+                <img src="img/resized_pexels-pixabay-164558.jpg" class="img-responsive" alt="" height="600px" width="600px">
               </a>
               </div>
             
@@ -464,8 +532,8 @@
             </div>
             <div class="col-md-3 col-sm-4">
               <div class="img-wrapper">
-                <a href="img/pexels-binyamin-mellish-186077.jpg">
-                <img src="img/pexels-binyamin-mellish-186077.jpg" class="img-responsive" alt="" height="600px" width="600px">
+                <a href="img/resized_pexels-pixabay-210617 (1).jpg">
+                <img src="img/resized_pexels-pixabay-210617.jpg" class="img-responsive" alt="" height="600px" width="600px">
               </a>
               </div>
             
@@ -473,8 +541,8 @@
             </div>
             <div class="col-md-3 col-sm-4">
               <div class="img-wrapper">
-                <a href="img/pexels-binyamin-mellish-186077.jpg">
-                <img src="img/pexels-binyamin-mellish-186077.jpg" class="img-responsive" alt="" height="600px" width="600px">
+                <a href="img/resized_pexels-pixabay-221540.jpg">
+                <img src="img/resized_pexels-pixabay-221540.jpg" class="img-responsive" alt="" height="600px" width="600px">
               </a>
               </div>
             
@@ -505,9 +573,9 @@
             <ul class="social-icons">
                 <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
                 <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
                 <li><a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                
             </ul>
         </div>
     </div>
